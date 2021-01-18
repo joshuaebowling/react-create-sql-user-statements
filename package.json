@@ -1,0 +1,35 @@
+{
+  "name": "react-create-sql-user-statements",
+  "version": "1.0.0",
+  "description": "for the given set of input, generate 1 or many sql statements to add the user to the specific database with the specific privileges",
+  "keywords": [
+    "typescript",
+    "react",
+    "mysql",
+    "infrastructure operations"
+  ],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-scripts": "3.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "typescript": "3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
