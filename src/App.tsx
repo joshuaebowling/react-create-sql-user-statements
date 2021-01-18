@@ -12,8 +12,12 @@ export default function App() {
       <DefineInputs setGeneratedSQL={setGeneratedSQL} />
       {generatedSQL !== null && (
         <>
-          <button type="button" onClick={clear}>
-            clear
+          <button
+            disabled={generatedSQL === null}
+            type="button"
+            onClick={clear}
+          >
+            clear sql
           </button>
           <br />
           <pre>{generatedSQL}</pre>

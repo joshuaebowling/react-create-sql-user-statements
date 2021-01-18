@@ -26,20 +26,27 @@ const DefineInputs: React.FunctionComponent<{
   }, [users, address, databaseName]);
   return (
     <div>
-      <label htmlFor="address">address</label>
+      <label
+        htmlFor="address"
+        title="such as localhost, domain name, or ip address"
+      >
+        [?]address
+      </label>
       <input
         name="address"
         value={address}
         onChange={(e) => setAddress(e.target.value)}
       />
       <br />
-      <label htmlFor="database">database</label>
+      <label title="the database name" htmlFor="database">
+        [?]database
+      </label>
       <input
         name="database"
         value={databaseName}
         onChange={(e) => setDatabaseName(e.target.value)}
       />
-      <p>add all the users you want</p>
+      <p>fill out form, then click submit to add a user. </p>
       <AddUser add={(user) => setUsers([user, ...users])} />
       <br />
       <Users users={users} clearAll={() => setUsers([])} generate={generate} />

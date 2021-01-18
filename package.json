@@ -1,12 +1,9 @@
 {
-  "name": "react-create-sql-user-statements",
+  "name": "react-create-mysql-users",
   "version": "1.0.0",
-  "description": "for the given set of input, generate 1 or many sql statements to add the user to the specific database with the specific privileges",
+  "description": "generate sql strings to add users to a given database for a given address(localhost, 127.0.0.1, etc)",
   "keywords": [
-    "typescript",
-    "react",
-    "mysql",
-    "infrastructure operations"
+    "config ops"
   ],
   "main": "src/index.tsx",
   "dependencies": {

@@ -23,13 +23,26 @@ const Users: React.FunctionComponent<{
   generate: () => void;
 }> = ({ users, clearAll, generate }) => {
   return (
-    <table>
+    <table border="1px">
+      <thead>
+        <th colSpan={3}>User table</th>
+      </thead>
       <thead>
         <th colSpan={3}>
-          <button type="button" onClick={clearAll}>
+          <button
+            disabled={users.length === 0}
+            type="button"
+            onClick={clearAll}
+          >
             clear all
           </button>
-          <button onClick={generate}>generate</button>
+          <button
+            title="add some users to enable"
+            disabled={users.length === 0}
+            onClick={generate}
+          >
+            generate
+          </button>
         </th>
       </thead>
       <thead>
